@@ -1,0 +1,70 @@
+/* Utility Classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/* /Utility Classes */
+
+.wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site_content {
+  height: calc(100% - 60px);
+}
+
+aside.main_menu {
+  min-width: 300px;
+  background-color: black;
+}
+/* Section music conetent */
+.cover_section {
+  background-color: aquamarine;
+  padding: 20px;
+  padding-top: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.subscrive_banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 300px);
+  height: 60px;
+  background-color: #8A2BE2A1;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: darkred;
+}
+/* /Section music conetent */
+
+/* Footer */
+footer.site_footer {
+  background-color: yellowgreen;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+/* /Footer */
