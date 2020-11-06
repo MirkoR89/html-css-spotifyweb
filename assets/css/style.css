@@ -17,8 +17,17 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
 /* /Utility Classes */
 
+/* Aside bar */
 .wrapper {
   height: 100vh;
   flex-direction: column;
@@ -33,6 +42,8 @@ aside.main_menu {
   min-width: 300px;
   background-color: black;
 }
+/* /Aside bar */
+
 /* Section music conetent */
 .cover_section {
   background-color: aquamarine;
