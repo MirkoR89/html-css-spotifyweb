@@ -7,39 +7,52 @@
   <title>Spotify</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/8d58ee31c8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper d-flex">
-    <main class="site_content d-flex wrapper">
-      <aside class="main_menu">
-        <div class="logo">
-          <i class="fab fa-spotify"></i>
-          <h1>Spotify</h1>
-        </div>
-
-        <div class="playlist d-flex">
-          <h3>PLAYLIST</h3>
-          <i class="fas fa-plus-square"></i>
-          <span>Crea Playlist</span>
-          <span>Nome Playlist</span>
-          <span>Nome Playlist</span>
-          <span>Nome Playlist</span>
-          <span>Nome Playlist</span>
-          <span>Nome Playlist</span>
-          <span>Nome Playlist</span>
-        </div>
-
-        <div class="installing flex-end">
-          <i class="far fa-arrow-alt-circle-down"></i>
-          <span>Installa app</span>
-          <hr>
-          <i class="fas fa-user-circle"></i>
-          <span>Mirko Rnelli</span>
-        </div>
+  <aside class="sidebar d-flex flex-column flex-between">
+    <div class="menu d-flex flex-column">
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="">
       </div>
-      </aside>
+      <ul>
+        <li><a href=""><img src="assets/img/home.svg" alt=""><span class="text_menu">Home</span></a></li>
+        <li><a href=""><img src="assets/img/search.svg" alt=""><span class="text_menu">Cerca</span></a></li>
+        <li><a href=""><img src="assets/img/libreria.svg" alt=""><span class="text_menu">La tua libreria</span></a></li>
+      </ul>
+    </div>
 
-      <section class="music_content">
+    <div class="playlist_plus d-flex flex-column">
+      <h3>PLAYLIST</h3>
+      <ul>
+        <li><a href="#"><i class="fas fa-plus-square"></i><span>Crea la tua playlist</span></a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+        <li><a href="#">Nome Playlist</a></li>
+      </ul>
+    </div>
+
+
+    <div class="installing">
+      <i class="far fa-arrow-alt-circle-down"></i>
+      <span>Installa app</span>
+      <hr>
+    </div>
+    <div class="profile">
+      <i class="fas fa-user-circle"></i>
+      <span>Mirko Rnelli</span>
+    </div>
+  </div>
+  </aside>
+
+
+  <main class="site_content d-flex">
+    <section class="music_content">
         <div class="subscrive_banner">
         </div>
 
@@ -50,40 +63,45 @@
             <a href="#">Lorem</a>
             <a href="#">Lorem</a>
           </nav>
-          <h2>Recently played</h2>
-          <p>Più ascolti, più accurati saranno i suggerimenti</p>
-          <div class="recently_played d-flex flex-wrap">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+
+          <div class="recently_played">
+            <h2>Recently played</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="items_box d-flex flex-wrap">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
           </div>
 
-          <h2>Creato per Mirko Rinelli</h2>
-          <div class="created_for d-flex flex-wrap">
-            <div class="item"></div>
-            <div class="item"></div>
-
-
-          <h2>Artisti più popolari</h2>
-          <p>Più ascolti, più accurati saranno i suggerimenti</p>
-          <div class="popular d-flex flex-wrap">
-            <div class="item"></div>
-            <div class="item"></div>
+          <div class="created_for">
+            <h2>Creato per Mirko Rinelli</h2>
+            <div class="items_box d-flex flex-wrap">
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
           </div>
 
+          <div class="popular">
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="items_box d-flex flex-wrap">
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+          </div>
         </div>
-
       </section>
-    </main>
+  </main>
 
-    <footer class="site_footer">
+  <footer class="site_footer">
       <div class="player">
         Player
       </div>
     </footer>
-  </div>
+
 </body>
 </html>

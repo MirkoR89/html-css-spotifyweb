@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: #333;
   color: white;
 }
@@ -18,31 +19,111 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-no-wrap {
-  flex-wrap: nowrap;
-}
-
-.flex-end {
-  align-items: flex-end;
-}
-/* /Utility Classes */
-
-/* Aside bar */
-.wrapper {
-  height: 100vh;
+.flex-column {
   flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-between {
   justify-content: space-between;
 }
 
-.site_content {
-  height: calc(100% - 60px);
+.flex-around {
+  justify-content: space-around;
 }
 
-aside.main_menu {
-  min-width: 300px;
-  background-color: black;
+.mt-auto {
+  margin-top: auto;
 }
-/* /Aside bar */
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+a {
+ text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+/* /Utility Classes */
+
+/* Sidebar */
+.site_content {
+  width: calc(100vw - 300px);
+  height: calc(100vh - 60px);
+  margin-left: 300px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 300px;
+  height: calc(100vh - 60px);
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+aside a {
+  color: grey;
+  padding-left: 30px;
+}
+
+aside a:hover {
+  color: white;
+  border-left: 2px solid yellowgreen;
+}
+
+.logo img {
+  height: 50px;
+  margin: 20px 0 30px 30px;
+}
+
+.menu ul img{
+height: 25px;
+margin-right: 10px;
+}
+
+.menu {
+  margin-bottom: 30px;
+}
+
+.playlist_plus {
+  overflow-y: auto;
+}
+
+.playlist_plus h3 {
+  padding-left: 30px;
+}
+
+.playlist_plus ul i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.installing {
+  margin: 100px 30px 0 30px;
+  color: grey;
+}
+
+.profile {
+  margin: 10px 30px;
+  color: white;
+}
+
+.profile i {
+  font-size: 30px;
+}
+/* Sidebar */
 
 /* Section music conetent */
 .cover_section {
@@ -77,5 +158,6 @@ footer.site_footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 /* /Footer */
