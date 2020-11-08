@@ -31,6 +31,10 @@ body {
   justify-content: space-between;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-around {
   justify-content: space-around;
 }
@@ -111,7 +115,7 @@ margin-right: 10px;
 }
 
 .installing {
-  margin: 100px 30px 0 30px;
+  margin: 70px 30px 0 30px;
   color: grey;
 }
 
@@ -127,20 +131,48 @@ margin-right: 10px;
 
 /* Section music conetent */
 .cover_section {
-  background-color: aquamarine;
+  background-color: #151922;
   padding: 20px;
   padding-top: 60px;
   overflow-y: auto;
   overflow-x: hidden;
 }
-
+/* Upgrade bunner */
 .subscrive_banner {
   position: fixed;
   top: 0;
   right: 0;
   width: calc(100% - 300px);
   height: 60px;
-  background-color: #8A2BE2A1;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.subscrive_banner button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin: 10px 30px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+/* /Upgrade bunner */
+
+
+.cover_section nav {
+  margin: 20px 100px 50px 100px;
+}
+
+.cover_section a {
+  color: grey;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.cover_section a:hover {
+  color: white;
+  border-bottom: 2px solid yellowgreen;
 }
 
 .item {
