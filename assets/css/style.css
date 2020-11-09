@@ -39,6 +39,10 @@ body {
   justify-content: space-around;
 }
 
+.flex-center {
+  align-items: center;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -67,7 +71,7 @@ li {
 
 .sidebar {
   width: 300px;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   background-color: black;
   position: fixed;
   top: 0;
@@ -80,6 +84,8 @@ li {
 aside a {
   color: grey;
   padding-left: 30px;
+  display: flex;
+  align-items: center;
 }
 
 aside a:hover {
@@ -117,6 +123,8 @@ margin-right: 10px;
 .installing img,
 .profile img {
   height: 30px;
+  margin-right: 8px;
+
 }
 
 .installing {
@@ -195,28 +203,48 @@ margin-right: 10px;
 footer.site_footer {
   background-color: #282828;
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1;
 }
 /* Player */
+/* Songs Player */
 .player {
+  height: 100%;
   width: 100%;
 }
 
-.song_player {
-  width: 300px;
-
-}
-
-
-
 .player img {
   height: 50px;
+  margin: 0 30px;
 }
 
+.icons_song {
+  margin: 0 30px;
+}
 
+.icons_song i {
+  color: grey;
+  font-size: 20px;
+  margin: 0 5px;
+}
+/* Songs Player */
+/* Icons player */
+.icons_player {
+  width: 300px;
+}
+
+.icons_player i {
+  color: grey;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.icons_player i:nth-last-child(4) {
+  font-size: 30px;
+}
+/* Icons player */
 /* Player */
 /* /Footer */
