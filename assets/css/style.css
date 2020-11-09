@@ -188,9 +188,11 @@ margin-right: 10px;
 }
 
 .cover_section a {
+  width: 140px;
   color: grey;
   font-weight: 600;
-  padding: 0 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 .cover_section a:hover {
@@ -255,7 +257,8 @@ footer.site_footer {
 }
 /* Songs Player */
 .player img {
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 0 30px;
 }
 
