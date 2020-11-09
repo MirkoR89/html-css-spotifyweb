@@ -202,10 +202,21 @@ footer.site_footer {
   z-index: 1;
 }
 /* Player */
+.player {
+  width: 100%;
+}
+
+.song_player {
+  width: 300px;
+
+}
+
+
 
 .player img {
   height: 50px;
 }
+
 
 /* Player */
 /* /Footer */
