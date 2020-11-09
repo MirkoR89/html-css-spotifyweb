@@ -198,7 +198,19 @@ margin-right: 10px;
   border-bottom: 2px solid yellowgreen;
 }
 /* /Nav Cover section */
-/* Recently played */
+
+.recently_played h2,
+.created_for h2,
+.popular h2 {
+  margin: 30px 0 10px 0;
+}
+
+.recently_played p,
+.created_for p,
+.popular p {
+  color: grey;
+}
+
 .item img {
   width: 200px;
   height: 200px;
@@ -221,7 +233,9 @@ margin-right: 10px;
   font-size: 12px;
 }
 
-/* /Recently played */
+.popular .item img {
+  border-radius: 50%;
+}
 /* /Section music conetent */
 
 /* Footer */
@@ -281,7 +295,7 @@ footer.site_footer {
 
 .time_line {
   width: 500px;
-  height: 2px;
+  height: 3px;
   margin: 15px;
   border-radius: 50px;
   background-color: grey;
@@ -296,7 +310,7 @@ footer.site_footer {
 .volume_line {
   display: inline-block;
   width: 100px;
-  height: 2px;
+  height: 3px;
   margin: 15px;
   border-radius: 50px;
   background-color: grey;
