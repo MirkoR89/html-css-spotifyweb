@@ -99,6 +99,10 @@ aside a:hover {
   margin: 20px 0 20px 20px;
 }
 
+.logo img:last-child {
+  display: none;
+}
+
 .menu ul img{
 height: 25px;
 margin-right: 10px;
@@ -350,9 +354,6 @@ footer.site_footer {
     flex-basis: calc(100%/3);
   }
 
-  .cover_section nav {
-
-  }
 }
 
 
@@ -362,7 +363,36 @@ footer.site_footer {
     flex-basis: calc(100%/3);
   }
 
-  .cover_section nav {
+  .sidebar {
+    width: 80px;
+  }
 
+  .logo img {
+    display: none;
+    margin: 20px;
+
+  }
+
+  .logo img:last-child {
+    display: block;
+    color: white;
+  }
+
+  .menu .text_menu {
+    display: none;
+  }
+
+  .menu ul img{
+  height: 25px;
+  margin: 10px;
+  }
+
+  .site_content {
+    width: calc(100vw - 80px);
+    margin-left: 80px;
+  }
+
+  .subscrive_banner {
+    width: calc(100% - 80px);
   }
 }
