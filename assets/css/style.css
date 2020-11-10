@@ -419,9 +419,7 @@ footer.site_footer {
   }
 
   .logo img:last-child {
-    background-color: black;
     display: block;
-    color: black;
   }
 
   .menu .text_menu {
