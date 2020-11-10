@@ -163,12 +163,11 @@ margin-right: 10px;
   right: 0;
   width: calc(100% - 250px);
   height: 60px;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .subscrive_banner button {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: 2px solid white;
   border-radius: 30px;
@@ -195,22 +194,29 @@ margin-right: 10px;
 }
 /* Nav Cover section */
 .cover_section nav {
-  font-size: 15px;
-  margin: 20px 100px 50px 100px;
+  font-size: 18px;
 }
 
 .cover_section nav a {
-  flex-basis: calc(100%/6);
-  white-space: nowrap;
   color: grey;
   font-weight: 600;
-  padding: 10px;
   text-align: center;
+  margin: auto;
+  width: calc(100%/6);
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.cover_section a:hover div:after {
+  content: "";
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  border-bottom: 2px solid yellowgreen;
 }
 
 .cover_section a:hover {
   color: white;
-  border-bottom: 2px solid yellowgreen;
 }
 /* /Nav Cover section */
 
@@ -227,13 +233,14 @@ margin-right: 10px;
 }
 
 .item img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .item {
+  width: calc(100%/6);
   text-align: center;
-  margin: 20px 15px;
+  padding: 20px 15px;
   line-height: 20px;
 }
 
@@ -243,7 +250,6 @@ margin-right: 10px;
 }
 
 .item p {
-  width: 200px;
   color: grey;
   font-size: 12px;
 }
@@ -251,6 +257,12 @@ margin-right: 10px;
 .popular .item img {
   border-radius: 50%;
 }
+
+.created_for .item:last-child,
+.popular .item:last-child {
+  margin-right: auto;
+}
+
 /* /Section music conetent */
 
 /* Footer */
@@ -279,6 +291,10 @@ footer.site_footer {
   margin: 0 30px;
 }
 
+.artist_title {
+  margin-right: auto;
+}
+
 .artist_title h4 {
   font-size: 16px;
 }
@@ -288,15 +304,10 @@ footer.site_footer {
   font-size: 12px;
 }
 
-.icons_song,
-.icons_volume {
-  margin: 0 30px;
-}
-
 .icons_song i {
   color: grey;
   font-size: 20px;
-  margin: 0 5px;
+  padding: 0 10px;
 }
 /* Songs Player */
 /* Icons player */
@@ -311,17 +322,18 @@ footer.site_footer {
 .player_control i {
   color: white;
   font-size: 15px;
-  margin: 0 20px;
+  padding: 0 15px;
 }
+
 
 .player_control i:nth-last-child(3) {
   font-size: 25px;
 }
 
 .time_line {
-  width: 100%;
+  width: 70%;
   height: 3px;
-  margin: 15px;
+  margin: 10px auto;
   border-radius: 50px;
   background-color: grey;
 }
@@ -333,14 +345,14 @@ footer.site_footer {
 
 .icons_volume i {
   color: white;
-  margin: 0 10px;
+  padding: 0 15px;
 }
 
 .volume_line {
   display: inline-block;
   width: 100px;
   height: 3px;
-  margin: 15px;
+  margin-right: auto;
   border-radius: 50px;
   background-color: grey;
 }
@@ -349,18 +361,51 @@ footer.site_footer {
 /* /Footer */
 
 /* Media Query Medium */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1140px) {
   .cover_section nav a {
     flex-basis: calc(100%/3);
   }
 
+  .item {
+    width: calc(100%/3);
+  }
+
 }
 
+/* Media Query S */
+@media screen and (max-width: 720px) {
+  .cover_section nav a {
+    width: calc(100%/3);
+    font-size: 14px;
+  }
 
-/* Media Query Small */
+  .item {
+    width: calc(100%/2);
+  }
+
+  .song_player img {
+    display: none;
+  }
+
+  .song_player h4,
+  .song_player span {
+    padding-left: 20px;
+  }
+
+  .icons_volume i {
+    padding: 0 10px;
+  }
+
+  .volume_line {
+    padding-right: 5px;
+  }
+}
+
+/* Media Query XS */
 @media screen and (max-width: 540px) {
   .cover_section nav a {
-    flex-basis: calc(100%/3);
+    width: calc(100%/3);
+    font-size: 14px;
   }
 
   .sidebar {
@@ -374,8 +419,9 @@ footer.site_footer {
   }
 
   .logo img:last-child {
+    background-color: black;
     display: block;
-    color: white;
+    color: black;
   }
 
   .menu .text_menu {
@@ -387,6 +433,21 @@ footer.site_footer {
   margin: 10px;
   }
 
+  .sidebar_bottom span,
+  .sidebar_bottom hr,
+  .profile span {
+    display: none;
+  }
+
+  .playlist_plus {
+    display: none;
+  }
+
+  .sidebar_bottom img,
+  .profile img {
+    margin: 5px auto;
+  }
+
   .site_content {
     width: calc(100vw - 80px);
     margin-left: 80px;
@@ -394,5 +455,26 @@ footer.site_footer {
 
   .subscrive_banner {
     width: calc(100% - 80px);
+  }
+
+  .item {
+    width: calc(100%/2);
+  }
+
+  .song_player img {
+    display: none;
+  }
+
+  .song_player h4,
+  .song_player span {
+    padding-left: 20px;
+  }
+
+  .icons_volume i {
+    padding: 0 10px;
+  }
+
+  .volume_line {
+    display: none;
   }
 }
